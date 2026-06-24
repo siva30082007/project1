@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainer Session Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Trainer Session Attendance Dashboard</h1>
+
+    <div class="container">
+
+        <div class="form">
+            <h2>Mark Attendance</h2>
+
+            <input type="text" id="student" placeholder="Student Name">
+
+            <input type="text" id="batch" placeholder="Batch Name">
+
+            <input type="date" id="date">
+
+            <select id="status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <button onclick="addAttendance()">Add Attendance</button>
+        </div>
+
+        <div class="filter">
+            <h2>Filter by Date</h2>
+            <input type="date" id="filterDate" onchange="filterAttendance()">
+        </div>
+
+        <h2>Attendance Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Batch</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceTable"></tbody>
+        </table>
+
+        <div class="summary">
+            <h2>Attendance Percentage</h2>
+            <p id="percentage">0%</p>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

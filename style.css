@@ -1,0 +1,62 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right,#800080,#ffffff,#0000ff);
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-style:normal;
+    color: black;
+}
+
+.container {
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.summary {
+    margin-top: 20px;
+    font-size: 22px;
+    color: green;
+}
